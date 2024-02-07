@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Programming tools/bootstrap-4.1.3-dist/css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/fundo.png" type="" crossorigin="anonymous">
+    <title>Portifólio | Ana Carolina</title>
+
+</head>
+
+<body> 
+    <div class="header">
+        <h2 class="portifolio">Portifó<span>lio</span></h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <div class="caixa-principal" id="home">
+        <div class="conteudo">
+            <div class="background-image">
+                <img src="./img/fundo.png" alt="">
+            </div>
+            <div class="titulo">
+                <h1>Ana Carolina <span>Almeida</span></h1>
+                <h3>Programadora Júnior</h3>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre">
+        <img src="./img/section-ana.png">
+        <div>
+            <h2>Sobre mim</h2>
+            <p>Olá, é um prazer tê-lo em meu site! </p>
+            <p>Sou a Ana Carolina, tenho 19 anos e estou no 2º semestre do curso de Desenvolvimento de Software e Multiplataforma!</p>
+            <p>Tenho conhecimento em HTML/CSS JavaScript, Python, MySQL e metodologias ágeis.</p>
+            <button id="contatoButton" onclick="scrollToSection('contato')">Entre em contato</button>
+        </div>
+    </section>
+
+    <div class="projetos" id="projetos">
+        <h2>Principais projetos</h2>
+        <div class="all-card">
+            <div class="card">
+                <img src="./img/hackathon-icon.png">
+                <h5>Hackatrip</h5>
+                <p>Com uma proposta emocionante da Fatec-Cotia e CPTM, tive a grande oportunidade de me juntar a mais estudantes e competir pela melhor ideia tecnológica!</p>
+                <button id="open-modal-btn-hackatrip" class="button-card" data-projeto-id="hackatrip">Ver projeto!</button>
+            </div>
+
+            <div class="card">
+                <img src="./img/notepad-icon.png">
+                <h5>Notepad</h5>
+                <p>Como uma amante da organização, desenvolvi um bloco de notas para acompanhar as tarefas e compromissos!</p>
+                <button id="open-modal-btn-notepad" class="button-card" data-projeto-id="notepad">Ver projeto!</button>
+            </div>
+
+            <div class="card">
+                <img src="./img/GBE-icon.png">
+                <h5>Guardiãs do bem estar</h5>
+                <p>Como projeto da faculdade, minha equipe e eu decidimos criar um espaço acolhedor para mulheres que sofrem ou sofreram de qualquer tipo de abuso.</p>
+                <button id="open-modal-btn-gbe" class="button-card" data-projeto-id="gbe">Ver projeto!</button>
+            </div>
+
+            <div class="card">
+                <img src="./img/chatbot-icon.png">
+                <h5>Chatbot</h5>
+                <p>Integrada ao nosso projeto "Guardiãs do bem estar" teremos uma amada "Guardiã" para os momentos de desabafo!</p>
+                <button id="open-modal-btn-chatbot" class="button-card" data-projeto-id="chatbot">Ver projeto!</button>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contato">
+        <h5>Ana Carolina </h5>
+        <p>Para mais informações</p>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ana-carolina-almeida-bb776b230/" target="_blank">
+                <img src="./img/linkedin-icon.png">
+                <p>LinkedIn</p>
+                <p>@Ana Carolina Almeida</p>
+            </a>
+
+            <a href="https://github.com/anaa-carolina" target="_blank">
+                <img src="./img/github-icon.png">
+                <p>GitHub</p>
+                <p>anaa-carolina</p>
+            </a>
+
+            <a href="tel:+5511937766546" target="_blank">
+                <img src="./img/fone-icon.png">
+                <p>Telefone</p>
+                <p>+55 11 9377-66546</p>
+            </a>
+
+            <a href="anaalmeida.contat00@gmail.com" target="_blank">
+                <img src="./img/email-icon.png">
+                <p>E-mail para contato</p>
+                <p>anaalmeida.contat00@gmail.com</p>
+            </a>
+            <a href="anacarolina328949@gmail.com" target="_blank">
+                <img src="./img/email-icon.png">
+                <p>E-mail pessoal</p>
+                <p>anacarolina328949@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+  
+    <div id="hackatripModal" class="modal" style="display: none">
+        <div class="hackatrip">
+            <div id="carousel-hackathon" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img class="hackathon-img" src='./img/hackatrip.jpg' alt=''>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="hackathon-img" src='./img/scheme.png' alt=''>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="hackathon-img" src='./img/cptm.png' alt=''>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#carousel-hackathon" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-hackathon" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+
+                </div>
+
+                <div class="ability">
+                    <h5>Habilidades</h5>
+
+                    <div class="skills">
+                        <div class="icons">
+                            <img src="./img/algorithm.png" alt="">
+                            <h2>Algorítmos</h2>
+                        </div>
+
+                        <div class="icons">
+                            <img src="./img/logic.png" alt="">
+                            <h2>Lógica</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="details-project">
+                <h5>Hackathon</h5>
+                <p>Nós alunos da FATEC-Cotia fomos convidados para um Hackathon em parceria com a CPTM para integrar tecnologia e serviço à sociedade.</p>
+                <p>Nossa missão era desenvolver uma tecnologia onipresente nos serviços da CPTM, a melhor ideia seria levada a diante para sua implementação.</p>
+                <p>Nosso projeto consistia em gerenciar por ID's as catracas do metrô armazenando e analizando os trrajetos mais feitos pelos usuários, para assim, oferecer o melhor serviço.</p>
+            </div>
+            <button id="closeBtnHackatrip" class="close-btn" onclick="fecharModal('hackatripModal')">&times;</button>
+        </div>
+    </div>
+
+    <div id="notepadModal" class="modal" style="display: none">
+        <div class="notepad">
+            <img src="./img/notepad-icon.png" alt="notepad-img">
+            <div class="details-project">
+                <h5>EM PROCESSO!</h5>
+                <p>Em breve mais atualizações!</p>
+            </div>
+            <button id="closeBtnNotepad" class="close-btn" onclick="fecharModal('notepadModal')">&times;</button>
+        </div>
+    </div>
+
+    <div id="gbeModal" class="modal" style="display: none">
+        <div class="notepad">
+            <img src="./img/GBE-icon.png" alt="gbe-img">
+            <div class="details-project">
+                <h5>EM PROCESSO!</h5>
+                <p>Em breve mais atualizações!</p>
+            </div>
+            <button id="closeBtnGge" class="close-btn" onclick="fecharModal('gbeModal')">&times;</button>
+        </div>
+    </div>
+
+    <div id="chatbotModal" class="modal" style="display: none;">
+        <div class="notepad">
+            <img src="./img/chatbot-icon.png" alt="chatbot-img">
+            <div class="details-project">
+                <h5>EM PROCESSO!</h5>
+                <p>Em breve mais atualizações!</p>
+            </div>
+            <button id="closeBtnChatbot" class="close-btn" onclick="fecharModal('chatbotModal')">&times;</button>
+        </div>
+    </div>
+</body>
+</html>
