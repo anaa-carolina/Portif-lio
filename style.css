@@ -164,7 +164,7 @@ section div button:hover {
     position: relative;
 }
 
-.all-card {
+.cardwall {
     width: 90%;
     padding: 20px;
     margin: 20px;
@@ -316,6 +316,15 @@ footer p {
     height: 100px;
 }
 
+.ability h5 {
+    color: rgba(255, 255, 255, 0.644);
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
 .skills{
     width: 100%;
     height: 80px;
@@ -363,9 +372,18 @@ footer p {
     border-left: 5px solid #ffffff; 
 }
 
+.details-project h5 {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center
+}
+
 .details-project p {
     color: darkgrey;
-    font-size: 15px ;
+    font-size: 20px ;
     padding: 15px;
     display: flex;
     justify-content: center;
