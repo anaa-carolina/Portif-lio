@@ -4396,6 +4396,15 @@ input[type="button"].btn-block {
   height: 140px;
 }
 
+.card h5 {
+  color: rgba(255, 255, 255, 0.644);
+  font-size: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
+
 .card p {
   color: rgba(255, 255, 255, 0.644) ;
   text-align: justify;
